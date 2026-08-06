@@ -1011,6 +1011,70 @@ section .section-details{
   } 
 }
 .footer-content ul li a:hover {
-  color: #fff; 
+  color: #fff;
   transform: rotate(360deg);
+}
+
+/*===========================
+  11.CONTENT ADDITIONS CSS
+===========================*/
+
+/* Tech stack line inside the project hover overlay.
+   Mirrors .project-title's slide-down reveal. */
+.project .project-overlay .project-content .project-stack {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  opacity: 0;
+  margin-bottom: 0;
+  padding: 0 15px;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.project:hover .project-overlay .project-content .project-stack {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.85;
+}
+
+/* Counter labels are longer now ("Apps In Production") — keep them
+   on one line instead of colliding with the icon. */
+.card-counter .count-name {
+  font-size: 16px;
+  left: 35px;
+  right: 35px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 991px) {
+  .card-counter .count-name {
+    font-size: 15px;
+  }
+}
+
+/* Phone / email in the contact boxes are links now. */
+.contact-box .contact-content a {
+  color: inherit;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.contact-box .contact-content a:hover {
+  color: #3334cc;
+  text-decoration: none;
 }
