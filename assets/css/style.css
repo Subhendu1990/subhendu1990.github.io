@@ -749,6 +749,18 @@ section .section-details{
   background: linear-gradient(7deg,#44be40 4.98%,#2bff45f5 94.88%);
   box-shadow: 4px 4px 17px #2bff45b3;
 }
+.card-counter.card-counter-4 {
+  background: linear-gradient(7deg,#6a3ab2 4.98%,#a855f7f5 94.88%);
+  box-shadow: 4px 4px 17px #a855f796;
+}
+.card-counter.card-counter-5 {
+  background: linear-gradient(7deg,#b26a1f 4.98%,#ffa62bf5 94.88%);
+  box-shadow: 4px 4px 17px #ffa62b96;
+}
+.card-counter.card-counter-6 {
+  background: linear-gradient(7deg,#0f7b8a 4.98%,#00d1e0f5 94.88%);
+  box-shadow: 4px 4px 17px #00d1e096;
+}
 
 .project {
   position: relative; 
