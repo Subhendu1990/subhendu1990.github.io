@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360" role="img" aria-label="Monolith to microservices architecture diagram">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2a33"/>
+      <stop offset="1" stop-color="#07131a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.7">
+      <stop offset="0" stop-color="#00d1e0" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#00d1e0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="360" height="360" fill="url(#bg)"/>
+  <rect width="360" height="360" fill="url(#glow)"/>
+
+  <rect x="28" y="28" width="304" height="304" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.12"/>
+
+  <!-- header -->
+  <rect x="44" y="44" width="72" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.35"/>
+  <line x1="28" y1="68" x2="332" y2="68" stroke="#ffffff" stroke-opacity="0.10"/>
+
+  <!-- gateway -->
+  <rect x="130" y="88" width="100" height="34" rx="8" fill="#00d1e0" fill-opacity="0.18" stroke="#00d1e0" stroke-opacity="0.55"/>
+  <rect x="146" y="102" width="52" height="6" rx="3" fill="#7fe9f2"/>
+  <circle cx="214" cy="105" r="4" fill="#00d1e0"/>
+
+  <!-- connectors gateway -> services -->
+  <g stroke="#00d1e0" stroke-opacity="0.4" stroke-width="1.5" fill="none">
+    <path d="M180 122 v18 h-84 v20"/>
+    <path d="M180 122 v18 h0 v20"/>
+    <path d="M180 122 v18 h84 v20"/>
+  </g>
+
+  <!-- service nodes row 1 -->
+  <g>
+    <rect x="60" y="160" width="72" height="44" rx="8" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
+    <circle cx="76" cy="176" r="5" fill="#2bd97c"/>
+    <rect x="88" y="173" width="32" height="6" rx="3" fill="#ffffff" fill-opacity="0.30"/>
+    <rect x="72" y="188" width="48" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/>
+
+    <rect x="144" y="160" width="72" height="44" rx="8" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
+    <circle cx="160" cy="176" r="5" fill="#2bd97c"/>
+    <rect x="172" y="173" width="26" height="6" rx="3" fill="#ffffff" fill-opacity="0.30"/>
+    <rect x="156" y="188" width="48" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/>
+
+    <rect x="228" y="160" width="72" height="44" rx="8" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
+    <circle cx="244" cy="176" r="5" fill="#ffa62b"/>
+    <rect x="256" y="173" width="30" height="6" rx="3" fill="#ffffff" fill-opacity="0.30"/>
+    <rect x="240" y="188" width="48" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.14"/>
+  </g>
+
+  <!-- message bus -->
+  <rect x="60" y="222" width="240" height="26" rx="13" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+  <g fill="#00d1e0">
+    <circle cx="96" cy="235" r="4"/>
+    <circle cx="140" cy="235" r="4" fill-opacity="0.7"/>
+    <circle cx="184" cy="235" r="4" fill-opacity="0.5"/>
+    <circle cx="228" cy="235" r="4" fill-opacity="0.35"/>
+    <circle cx="272" cy="235" r="4" fill-opacity="0.25"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5">
+    <line x1="96" y1="204" x2="96" y2="222"/>
+    <line x1="180" y1="204" x2="180" y2="222"/>
+    <line x1="264" y1="204" x2="264" y2="222"/>
+    <line x1="96" y1="248" x2="96" y2="268"/>
+    <line x1="180" y1="248" x2="180" y2="268"/>
+    <line x1="264" y1="248" x2="264" y2="268"/>
+  </g>
+
+  <!-- datastores -->
+  <g fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16">
+    <rect x="66" y="268" width="60" height="40" rx="7"/>
+    <rect x="150" y="268" width="60" height="40" rx="7"/>
+    <rect x="234" y="268" width="60" height="40" rx="7"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.30" stroke-width="1.5" fill="none">
+    <ellipse cx="96" cy="282" rx="14" ry="5"/>
+    <path d="M82 282 v12 Q96 299 110 294 v-12"/>
+    <ellipse cx="180" cy="282" rx="14" ry="5"/>
+    <path d="M166 282 v12 Q180 299 194 294 v-12"/>
+    <ellipse cx="264" cy="282" rx="14" ry="5"/>
+    <path d="M250 282 v12 Q264 299 278 294 v-12"/>
+  </g>
+</svg>
